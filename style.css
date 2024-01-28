@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 70%;
-} 
+}
 
 body {
     font-family: Arial;
@@ -14,13 +14,11 @@ body {
     line-height: 1.5;
     font-size: 1.7rem;
     scroll-behavior: smooth;
-    max-width: 100vw;
-    margin: 0 auto;
 }
 
 .container1 {
-    /* max-width: 100vw; */
-    /* margin: 0 auto; */
+    max-width: 100vw;
+    margin: 0 auto;
     cursor: default;
 }
 
@@ -40,6 +38,7 @@ header {
     background-color: black;
     border: 0;
     transition: all 0.3s ease-in-out 0s;
+    width: 100vw;
 }
 
 nav {
@@ -82,11 +81,11 @@ nav a {
     font-weight: 800;
 }
 
-.logo2{
+.logo2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position:absolute;
+    position: absolute;
     left: 80px;
     top: 40px;
 }
@@ -99,17 +98,18 @@ nav a {
     display: inline-block;
 }
 
-button{
+.login,
+.signup {
     padding: 8px;
     border: 2px solid gray;
     border-radius: 5px;
     font-weight: 600;
     font-size: 1.3rem;
     background-color: rgba(255, 255, 255, 0.764);
-    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-button:hover{
+.login:hover {
     background-color: green;
     color: whitesmoke;
 }
@@ -120,7 +120,7 @@ button:hover{
 }
 
 .signup:hover {
-    background-color: green;
+    background-color: darkgreen;
     color: whitesmoke;
 }
 
@@ -130,8 +130,9 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
-.content1{
-    color:#ffffff;
+
+.content1 {
+    color: #ffffff;
     font-size: 5rem;
     font-weight: 700;
     padding-top: 80px;
@@ -146,8 +147,100 @@ button:hover{
 }
 
 .container2 {
-    height: 400px;
+    height: 295px;
     background-color: transparent;
-    border: 2px solid black;
-    margin-top: -50px;
+    /* border: 2px solid black; */
+    margin-top: -130px;
+    padding: 0px 130px;
+}
+
+.booking {
+    background-color: #ffffff;
+    height: 70px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.book {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.469);
+}
+
+.book i {
+    font-size: 1rem;
+    color: rgb(0, 119, 255);
+}
+
+.book i span {
+    color: black;
+}
+
+.book:hover {
+    background-color: rgb(73, 156, 250);
+}
+
+.search-flight {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 210px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.search-flight .tour {
+    border: 2px solid rgba(0, 0, 0, 0.543);
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 15px;
+    background-color: rgba(128, 128, 128, 0.511);
+    border-radius: 20px;
+}
+
+.search-flight .calendar {
+    border: 2px solid rgba(0, 0, 0, 0.543);
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 15px;
+    background-color: rgba(128, 128, 128, 0.511);
+    border-radius: 20px;
+}
+
+.search {
+    padding: 30px;
+    background-color: rgb(0, 119, 255);
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+.search:hover {
+    background-color: rgb(21, 128, 251);
+}
+
+.search i {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.src-dest {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.src-dest i {
+    color: rgb(0, 119, 255);
 }
