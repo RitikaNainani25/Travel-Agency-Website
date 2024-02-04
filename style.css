@@ -6,6 +6,7 @@
 
 html {
     font-size: 70%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
     font-weight: 600;
     line-height: 1.5;
     font-size: 1.7rem;
-    scroll-behavior: smooth;
 }
 
 .container1 {
@@ -39,6 +39,7 @@ header {
     border: 0;
     transition: all 0.3s ease-in-out 0s;
     width: 100vw;
+    z-index: 10;
 }
 
 nav {
@@ -149,7 +150,6 @@ nav a {
 .container2 {
     height: 295px;
     background-color: transparent;
-    /* border: 2px solid black; */
     margin-top: -130px;
     padding: 0px 130px;
 }
@@ -243,4 +243,153 @@ nav a {
 
 .src-dest i {
     color: rgb(0, 119, 255);
+}
+
+.flip i {
+    transform: rotate(180deg);
+}
+
+i {
+    z-index: 1;
+}
+
+.destination {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container3 {
+    width: 90vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.destination .heading1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.card1 {
+    height: 55vh;
+    width: 22vw;
+    background-image: url("images/img1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #141b3480;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.card2 {
+    height: 55vh;
+    width: 22vw;
+    background-image: url("images/img2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #141b3480;
+}
+
+.card3 {
+    height: 55vh;
+    width: 22vw;
+    background-image: url("images/img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #141b3480;
+}
+
+.card4 {
+    height: 55vh;
+    width: 22vw;
+    background-image: url("images/img4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #141b3480;
+}
+
+.place {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.5s;
+    color: #ffffffd6;
+    padding-bottom: 20px;
+}
+
+.place:hover {
+    opacity: 1;
+}
+
+.name {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.state {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.peoples {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.place>* {
+    transform: translateY(25px);
+    transition: transform 0.5s;
+}
+
+.place:hover>* {
+    transform: translateY(0px);
+}
+
+.arrow button {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.arrow button i {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.destination .r-arrow {
+    background-color: #141b34;
+    color: #ffffff;
+}
+
+.arrow button:hover {
+    background-color: #172148;
+    color: #ffffff;
 }
