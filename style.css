@@ -14,6 +14,7 @@ body {
     font-weight: 600;
     line-height: 1.5;
     font-size: 1.7rem;
+    overflow-x: hidden;
 }
 
 .container1 {
@@ -33,7 +34,7 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: black;
     border: 0;
@@ -47,7 +48,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     color: #ffffff;
-    padding: 20px 0px;
+    padding: 18px 0px;
     transition: all 0.3s;
 }
 
@@ -136,7 +137,7 @@ nav a {
     color: #ffffff;
     font-size: 5rem;
     font-weight: 700;
-    padding-top: 80px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -150,8 +151,14 @@ nav a {
 .container2 {
     height: 295px;
     background-color: transparent;
-    margin-top: -130px;
+    margin-top: -120px;
     padding: 0px 130px;
+}
+
+.book-container {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .booking {
@@ -255,33 +262,32 @@ i {
 
 .destination {
     width: 100vw;
-    height: 80vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .container3 {
     width: 90vw;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+    height: fit-content;
+    flex-wrap: wrap;
+    display: flex;
     gap: 2rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.destination .heading1 {
+h1 {
     font-size: 4rem;
     font-weight: 700;
 }
 
-.card1 {
-    height: 55vh;
-    width: 22vw;
-    background-image: url("images/img1.png");
+.card {
+    height: 400px;
+    width: 280px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -291,43 +297,24 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    box-shadow:  rgba(0, 0, 0, 0.245) 0px 5px 15px 0px;
 }
 
 
-.card2 {
-    height: 55vh;
-    width: 22vw;
+#card1 {
+    background-image: url("images/img1.png");
+}
+
+#card2 {
     background-image: url("images/img2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px;
-    background-blend-mode: multiply;
-    background-color: #141b3480;
 }
 
-.card3 {
-    height: 55vh;
-    width: 22vw;
+#card3 {
     background-image: url("images/img3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px;
-    background-blend-mode: multiply;
-    background-color: #141b3480;
 }
 
-.card4 {
-    height: 55vh;
-    width: 22vw;
+#card4 {
     background-image: url("images/img4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px;
-    background-blend-mode: multiply;
-    background-color: #141b3480;
 }
 
 .place {
@@ -342,7 +329,7 @@ i {
     opacity: 0;
     transition: 0.5s;
     color: #ffffffd6;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .place:hover {
@@ -366,12 +353,46 @@ i {
 }
 
 .place>* {
+    opacity: 0;
     transform: translateY(25px);
-    transition: transform 0.5s;
 }
 
-.place:hover>* {
+.place>.name {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: transform 0.5s 0.1s;
+}
+
+.place>.state {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: transform 0.5s 0.12s;
+}
+
+.place>.peoples {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: transform 0.5s 0.18s;
+}
+
+.place:hover>.name {
     transform: translateY(0px);
+}
+
+.place:hover>.state {
+    transform: translateY(0px);
+}
+
+.place:hover>.peoples {
+    transform: translateY(0px);
+}
+
+.arrow {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .arrow button {
@@ -392,4 +413,173 @@ i {
 .arrow button:hover {
     background-color: #172148;
     color: #ffffff;
+}
+
+.services {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.services .image {
+    height: 500px;
+    width: 300px;
+    background-image: url("images/img6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    height: 15%;
+    width: 40%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.box h3 {
+    color: blue;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+#box1,
+#box3 {
+    position: relative;
+    left: 140px;
+}
+
+#box2 {
+    position: relative;
+    right: 140px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.book-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.car,
+.bed {
+    font-size: 30px;
+}
+
+.book-section h1 {
+    font-size: 35px;
+}
+
+.book-section p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container5 {
+    width: 92vw;
+    height: fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    height: 300px;
+    width: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #141b3480;
+    color: #ffffffd6;
+}
+
+.recommendation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #ffffffd6;
+}
+
+.location {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.trips {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.recommendation:hover {
+    background-color: rgba(0, 0, 0, 0.52);
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 1s;
+}
+
+.recommendation>* {
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.recommendation:hover>* {
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+    transition-delay: 6ms;
+}
+
+#img1 {
+    background-image: url("images/img2.png");
+}
+
+#img2 {
+    background-image: url("images/img7.png");
+    width: 650px;
+}
+
+#img3 {
+    background-image: url("images/img4.jpg");
+}
+
+#img4 {
+    background-image: url("images/img8.png");
+}
+
+#img5 {
+    background-image: url("images/img9.png");
 }
