@@ -1,0 +1,256 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-bar i {
+        font-size: 2.5rem;
+    }
+
+    .login,
+    .signup {
+        display: none;
+    }
+
+    .upper-footer .container7 {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .upper-footer .footer-links {
+        min-width: 20rem;
+    }
+
+    .search-flight {
+        height: 80px;
+        border-top-left-radius: 30px;
+    }
+
+    .search-flight .tour,
+    .search-flight .calendar,
+    .booking {
+        display: none;
+    }
+
+    .search-flight input {
+        padding: 12px 155px 12px 5px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    .search {
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .search i {
+        font-size: 3rem;
+        color: #ffffff;
+    }
+
+    .destination {
+        margin-top: -150px;
+    }
+
+    .card {
+        width:250px;
+        height: 250px;
+    }
+
+    .services {
+        margin-top: 120px;
+    }
+
+    .container4 {
+        gap: 40px;
+    }
+
+    .book-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gallery {
+        margin-top: 140px;
+    }
+
+    .testimonials {
+        margin-top: -30px;
+        margin-bottom: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .search-flight {
+        height: 0px;
+        border-top-left-radius: 30px;
+    }
+
+    .search-flight input {
+        padding: 10px 100px 10px 5px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .search {
+        padding: 8px;
+        border-radius: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .search i {
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+
+    .destination {
+        margin-top: 110px;
+    }
+
+    .card {
+        width:250px;
+        height: 250px;
+    }
+
+    .services {
+        margin-top: 450px;
+    }
+
+    #box1,
+    #box3 {
+        left: 110px;
+    }
+
+    #box2 {
+        right: 110px;
+    }
+ 
+    .container4 {
+        gap: 25px;
+    }
+
+    .book-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .book-car {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-hotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-section h1 {
+        font-size: 25px;
+    }
+    
+    .book-section p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .gallery {
+        margin-top: 200px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .search-flight {
+        height: 0px;
+        border-top-left-radius: 30px;
+    }
+
+    .search-flight input {
+        padding: 8px 60px 8px 5px;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .search {
+        padding: 8px;
+        border-radius: 12px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .search i {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    #box1,
+    #box3 {
+        left: 0px;
+    }
+
+    #box2 {
+        right: 0px;
+    }
+
+    .review p {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .search-flight input {
+        display: none;
+    }
+
+    .search-flight .tour,
+    .search-flight .calendar,
+    .search {
+        font-size: 15px;
+    }
+
+    .destination {
+        margin-top: 70px;
+    }
+
+    .card {
+        width:250px;
+        height: 280px;
+    }
+
+    .services {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .search-flight input {
+        display: none;
+    }
+
+    .testimonials {
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+}

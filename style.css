@@ -471,9 +471,10 @@ h1 {
 
 .container4 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 70px;
 }
 
 .book-section {
@@ -494,6 +495,10 @@ h1 {
 .book-section p {
     font-size: 18px;
     font-weight: 400;
+}
+
+.book-section a i {
+    color: black;
 }
 
 .gallery {
@@ -565,12 +570,12 @@ h1 {
 }
 
 #img1 {
-    background-image: url("images/img2.png");
+    background-image: url("images/img7.png");
+    width: 650px;
 }
 
 #img2 {
-    background-image: url("images/img7.png");
-    width: 650px;
+    background-image: url("images/img2.png");
 }
 
 #img3 {
